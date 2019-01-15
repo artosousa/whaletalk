@@ -7,10 +7,10 @@ const playWhaleSound = document.getElementById('play-sound');
 const translateToWhale = function(){
   let inputText = document.getElementById('user-input').value;
   let resultArray  = [];
-  
+
   console.log('run the function');
   console.log(inputText);
-  
+
   for(let inputIndex = 0; inputIndex < inputText.length; inputIndex++){
   //console.log('input index = ' + input[inputIndex]);
   for(let vowel = 0; vowel < vowels.length; vowel++){
@@ -19,7 +19,7 @@ const translateToWhale = function(){
       if(inputText[inputIndex] === 'e'){
         resultArray.push('ee');
       }else if(inputText[inputIndex] === 'u'){
-        resultArray.push('uu');       
+        resultArray.push('uu');
       } else{
         resultArray.push(inputText[inputIndex]);
       }
