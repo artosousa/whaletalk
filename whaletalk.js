@@ -1,20 +1,34 @@
-const input = 'A whale of a deal!';
 const vowels = ['a','e','i','o','u'];
-let resultArray  = [];
+const translated = document.getElementById('translated-box');
+const originalString = document.getElementById('original-string');
+const input = document.getElementById('user-input');
 
-for(let inputIndex = 0; inputIndex < input.length; inputIndex++){
+const translateToWhale = function(){
+  let inputText = document.getElementById('user-input').value;
+  let resultArray  = [];
+  
+  console.log('run the function');
+  console.log(inputText);
+  
+  for(let inputIndex = 0; inputIndex < inputText.length; inputIndex++){
   //console.log('input index = ' + input[inputIndex]);
   for(let vowel = 0; vowel < vowels.length; vowel++){
     //console.log(vowel);
-    if(input[inputIndex] === vowels[vowel]){
-      if(input[inputIndex] === 'e'){
+    if(inputText[inputIndex] === vowels[vowel]){
+      if(inputText[inputIndex] === 'e'){
         resultArray.push('ee');
-      }else if(input[inputIndex] === 'u'){
+      }else if(inputText[inputIndex] === 'u'){
         resultArray.push('uu');       
       } else{
-        resultArray.push(input[inputIndex]);
+        resultArray.push(inputText[inputIndex]);
       }
     }
   }
 }
-console.log(resultArray.join("").toUpperCase());
+//resultArray.join("").toUpperCase()
+originalString.innerHTML = inputText;
+translated.innerHTML = resultArray.join("").toUpperCase();
+
+}
+
+input.addEventListener('keyup', translateToWhale);
