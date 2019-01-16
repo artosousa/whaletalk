@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -10,7 +9,7 @@
         <title>Learn to speak Whale</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+				<meta name='og:image' content='imgs/whaleTalkimg.png'>
 				<link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
 				<link rel="apple-touch-icon" href="imgs/favicon.ico">
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -24,30 +23,39 @@
 
 				<div class="container">
 					<h1>Learn how to speak whale! &#128011;</h1>
-					<br/>
-
-					<input type="text" id="user-input" style="width:100%; padding: 10px;" >
+					<p>have you always wanted to communicate with whales but just have never known how? WELL NOW YOU CAN with this state of the art Whale Translator. Our team of egineers have poured years of work developing a very complex algorithm which allows you, A HUMAN to now successfuly take your English and translate it so ANY Whale can now know what you've been wanting to share with them.</p>
 					<hr/>
-					<div><h3><span id="original-string"></span> Translated to whale:</h3></div>
-					<div id="translated-box" style="padding: 10px;color:#000; height:100px; border: 1px solid #ececec; width:100%;"></div>
 					<br/>
-					<input id="play-sound" type='button' value='🔊 Play' />
+					<input type="text" placeholder="example: 'Whale, You're so cool" id="user-input" >
+
+					<div><h3>'<span id="original-string">Whale, You're so cool</span>' Translated to whale:</h3></div>
+
+					<div id="translated-box">AEEOUUEEOOO</div>
+					<br/>
+					<button id="play-sound"  type="button"> 🔊 Play</button>
 					<a href="https://adopt-us.whales.org/whale-adoption-project/" target="_blank">
-						<button type="button"> Adopt a Whale &#128011;</button>
+						<button type="button"> &#128011; Adopt a Whale </button>
 					</a>
 
+
+					<div class="sharethis-inline-share-buttons"></div>
+					<p><br/></p>
+					<div id="created-by">
+						<p>Whale Translator created by <a href="http://arthursousa.com" target="_blank" title="Arthur Sousa" > Arthur Sousa</a></p>
+					</div>
 				</div>
 				<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+				<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c3eb66e8366dd0011c2f98f&product=inline-share-buttons' async='async'></script>
 				<script type="text/javascript" src="js/whaletalk.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98725107-2"></script>
+				<script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+
+				  gtag('config', 'UA-98725107-2');
+				</script>
     </body>
 </html>
