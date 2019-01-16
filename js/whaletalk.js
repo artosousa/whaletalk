@@ -8,9 +8,6 @@ const translateToWhale = function(){
   let inputText = document.getElementById('user-input').value;
   let resultArray  = [];
 
-  console.log('run the function');
-  console.log(inputText);
-
   for(let inputIndex = 0; inputIndex < inputText.length; inputIndex++){
   //console.log('input index = ' + input[inputIndex]);
   for(let vowel = 0; vowel < vowels.length; vowel++){
