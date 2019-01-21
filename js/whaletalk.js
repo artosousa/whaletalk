@@ -1,4 +1,4 @@
-const vowels = ['a','e','i','o','u'];
+const vowels = ['a','e','i','o','u','A','E','I','O','U'];
 const translated = document.getElementById('translated-box');
 const originalString = document.getElementById('original-string');
 const input = document.getElementById('user-input');
@@ -13,9 +13,9 @@ const translateToWhale = function(){
   for(let vowel = 0; vowel < vowels.length; vowel++){
     //console.log(vowel);
     if(inputText[inputIndex] === vowels[vowel]){
-      if(inputText[inputIndex] === 'e'){
+      if(inputText[inputIndex] === 'e' || 'E'){
         resultArray.push('ee');
-      }else if(inputText[inputIndex] === 'u'){
+      }else if(inputText[inputIndex] === 'u' || 'U'){
         resultArray.push('uu');
       } else{
         resultArray.push(inputText[inputIndex]);
