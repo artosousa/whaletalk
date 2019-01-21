@@ -1,4 +1,4 @@
-const vowels = ['a','e','i','o','u'];
+const vowels = ['a','e','i','o','u','A','E','I','O','U'];
 const translated = document.getElementById('translated-box');
 const originalString = document.getElementById('original-string');
 const input = document.getElementById('user-input');
