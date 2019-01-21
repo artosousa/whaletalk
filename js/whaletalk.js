@@ -13,9 +13,9 @@ const translateToWhale = function(){
   for(let vowel = 0; vowel < vowels.length; vowel++){
     //console.log(vowel);
     if(inputText[inputIndex] === vowels[vowel]){
-      if(inputText[inputIndex] === 'e' || 'E'){
+      if(inputText[inputIndex] === 'e'){
         resultArray.push('ee');
-      }else if(inputText[inputIndex] === 'u' || 'U'){
+      }else if(inputText[inputIndex] === 'u'){
         resultArray.push('uu');
       } else{
         resultArray.push(inputText[inputIndex]);
