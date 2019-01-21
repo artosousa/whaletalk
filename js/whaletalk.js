@@ -13,9 +13,13 @@ const translateToWhale = function(){
   for(let vowel = 0; vowel < vowels.length; vowel++){
     //console.log(vowel);
     if(inputText[inputIndex] === vowels[vowel]){
-      if(inputText[inputIndex] === 'e' || inputText[inputIndex] === 'E'){
+      if(inputText[inputIndex] === 'e'){
         resultArray.push('ee');
-      }else if(inputText[inputIndex] === 'u' || inputText[inputIndex] === 'U'){
+      }else if(inputText[inputIndex] === 'E'){
+        resultArray.push('EE');
+      } else if(inputText[inputIndex] === 'U'){
+        resultArray.push('UU');
+      } else if(inputText[inputIndex] === 'u'){
         resultArray.push('uu');
       } else{
         resultArray.push(inputText[inputIndex]);
