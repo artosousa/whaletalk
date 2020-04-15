@@ -34,7 +34,7 @@ translated.innerHTML = resultArray.join("").toUpperCase();
 }
 
 const playSound = function(){
-  responsiveVoice.speak(translated.innerHTML.toLowerCase(), "UK English Male", {pitch: 2});
+  responsiveVoice.speak(translated.innerHTML.toLowerCase(), "Japanese Male", {pitch: 2});
 }
 
 playWhaleSound.addEventListener('mousedown', playSound);
