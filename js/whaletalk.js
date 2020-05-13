@@ -1,3 +1,4 @@
+console.log("User-agent header sent: " + navigator.userAgent);
 const vowels = ['a','e','i','o','u','A','E','I','O','U',' '];
 const translated = document.getElementById('translated-box');
 const originalString = document.getElementById('original-string');
